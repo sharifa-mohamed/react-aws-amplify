@@ -1,0 +1,25 @@
+ npm i -g  @aws-amplify/cli   
+ amplify configure
+ login to aws and setup user
+ amplify init
+ use aws profile created in previous step
+ amplify add auth
+ amplify push
+ create new resource y
+
+
+ npm install --save aws-amplify @aws-amplify/ui-react
+
+in app.js
+
+ import Amplify from  'aws-amplify'
+ import awsconfig from './aws-exports'
+ import {AmplifySignOut, withAuthenticator} from '@aws-amplify/ui-react'
+
+Amplify.configure(awsconfig)
+
+
+  <AmplifySignOut />
+react router contents ....
+
+export default withAuthenticator(App)
